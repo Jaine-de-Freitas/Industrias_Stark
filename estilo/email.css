@@ -1,0 +1,360 @@
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#cabecalho{
+    border-bottom: rgb(24, 255, 251) 2px solid;
+    display: flex;
+    align-items: center;
+}
+#list{
+    display:none;
+}
+.lista{
+    display: flex;
+    margin-left: auto;
+    margin-right: 50px;
+}
+.item{
+    list-style-type: none;
+}
+.itemA{
+    text-decoration:none;
+    color:white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 80px;
+    padding-left: 80px;
+    border-right: 3px solid rgb(24, 255, 251);
+}
+#isolar{
+    border-right:none;
+}
+#logo{
+    width: 210px;
+    height: 52px;
+    margin:30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+#titulo{
+    margin-top: 50px;
+    text-align: center;
+}
+#geral{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(38, 38, 38);
+    padding: 10px;
+    border-radius: 10px;
+}
+#conversas{
+    width: 28%;
+    align-items:center;
+}
+#mensagens{
+    background-image: url(../imagens/background.jpg);
+    background-repeat: repeat;
+    width: 68%;
+    border-radius: 10px;
+}
+.grupo{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pessoas{
+    font-size:23px;
+    margin-bottom: 0px;
+}
+.texto{
+    font-size: 19px;
+    margin-top: 2px;
+}
+.chat{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.perfil{
+    width:80px;
+    height: 80px;
+    border-radius: 10px;
+}
+.msg{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color:black;
+    width: 70%;
+    padding: 6px;
+    font-size: 22px;
+    margin-left: 2.5%;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.contato{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    margin: 0px;
+    color:black;
+    padding: 3px;
+}
+.contatoT{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    margin: 0px;
+    color:black;
+    padding: 3px;
+}
+.contatoNV{
+    display:flex;
+    align-items: center;
+    background-color: white;
+    margin: 0px;
+    color:black;
+    padding: 3px;
+}
+.juntar{
+    background-color: rgb(214, 255, 254);
+    border-radius: 10px;
+    color:black;
+    padding: 6px;
+    font-size: 22px;
+    width: 20%;
+    margin-left: 77%;
+}
+.juntar2{
+    background-color: rgb(214, 255, 254);
+    border-radius: 10px;
+    color:black;
+    padding: 6px;
+    font-size: 22px;
+    margin: auto;
+    margin-right: 2.5%;
+    margin-left:30%;
+    text-align: center;
+    margin-top: 5px;
+}
+#retorno{
+    background-color: rgb(214, 255, 254)
+}
+#resposta{
+    display:none;
+}
+.nome{
+    margin-left: 5px;
+    font-size: 25px;
+    font-family: 'Arial Black';
+}
+.bate-papoP{
+    display: none;
+    width: 100%;
+}
+.bate-papoT{
+    display: none;
+    width: 100%;
+}
+.bate-papoNV{
+    display: none;
+    width: 100%;
+}
+#ola{
+    display:none;
+}
+#resposta{
+    display: none;
+}
+#jogos{
+    display:none;
+}
+.gp{
+    width: 75px;
+    height: 70px;
+    border-radius: 40px;
+    margin-right: 6px;
+}
+#play{
+    width:50px;
+    height:50px;
+    margin-left: 15px;
+}
+#audio{
+    width: 200px;
+    height: 100px;
+    margin-left: 5px;
+}
+#petermsg{
+    width: 280px;
+    display:flex;
+    align-items: center;
+    margin-top: 5px;
+}
+#ktexto{
+    margin-left: 5px;
+}
+#kate{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+#cap{
+    display:flex;
+    align-items: center;
+}
+#nat{
+    display:flex;
+    align-items: center;
+}
+#cli{
+    display:flex;
+    align-items: center;
+}
+#restomsg{
+    display:none;
+}
+#peter{
+    align-items: center;
+    display: flex;
+}
+#k{
+    color: blueviolet;
+}
+#p{
+    color: brown;
+}
+#s{
+    color: blue;
+}
+#n{
+    color:brown;
+}
+#c{
+    color:blueviolet;
+}
+@media(max-width:1100px){
+    .itemA{
+        padding-left:40px;
+        padding-right:40px;
+    }
+}
+@media(max-width:1040px){
+    .texto{
+        display:none;
+    }
+}
+@media(max-width:850px){
+    .pessoas{
+        display: none;
+    }
+    #conversas{
+        width:90px;
+    }
+    #mensagens{
+        width: 100%;
+    }
+    #cascata{
+        list-style-type: none;
+        align-items: center;
+        display: flex;
+        width: 110px;
+        height: 40px;
+        margin-right: 5px;
+    }
+    #icon{
+        width: 30px;
+        margin: auto;
+        margin-left: 5px;
+    }
+    #icon2{
+        width: 20px;
+    }
+    #list{
+        display:block;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin: auto;
+        background-color: white;
+        color:black;
+        width: 120px;
+    }
+    #list:hover{
+        cursor: pointer;
+    }
+    #listaC{
+        display:none;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        font-size: 20px;
+        width: 100px;
+        background-color:rgb(221, 218, 218);
+        list-style-type: none;
+        padding: 20px;
+        margin: auto;
+        margin-left: -30px;
+        text-align: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+    .ite{
+        margin-bottom: 8px;
+    }
+    .iteA{
+        text-decoration: none;
+        color:black;
+    }
+    .lista{
+        display:none;
+    }
+}
+@media(max-width:458px){
+    #logo{
+        width: 80%;
+        height: auto;
+    }
+    #cascata{
+        width: 18%;
+    }
+    #list{
+        width: auto;
+    }
+    #listaC{
+        width: 15%;
+    }
+    .perfil{
+        width:60px;
+        height: 60px;
+    }
+    .nome{
+        font-size:20px;
+    }
+    .msg{
+        font-size:18px;
+    }
+    #retorno{
+        width:auto;
+        margin-left:auto;
+    }
+    #play{
+        width:30px;
+        height: 30px;
+    }
+    #audio{
+        width:100px;
+        height: 40px;
+    }
+    #petermsg{
+        width: 140px;
+    }
+    .msg{
+        width: auto;
+    }
+    .gp{
+        display: none;
+    }
+    .juntar{
+        width: 30%;
+        margin-left: 57%;
+    }
+}

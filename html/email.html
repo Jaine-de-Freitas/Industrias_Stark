@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Email</title>
+    <link rel="stylesheet" type="text/css" href="../estilo/email.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="../index.html"><img id="logo" src="../imagens/LogoIndStark.png" alt="logo"></a>
+        <ul id="list">
+            <li id="cascata" onclick="menuAparece()">
+                <p>Menu</p>
+                <img id="icon" src="../imagens/menu.png">
+            </li>
+            <ul id="listaC">
+                <li class="ite"><a class="iteA" href="../index.html">Home</a></li>
+                <li class="ite"><a class="iteA" href="conta.html">Meu Perfil</a></li>
+                <li class="ite"><a class="iteA" id="isolar" href="email.html">Email</a></li>
+                <li onclick="menuSome()"><img id="icon2" src="../imagens/fechar.png"></li>
+            </ul>
+        </ul>
+        <ul class="lista">
+            <li class="item"><a class="itemA" href="../index.html">Home</a></li>
+            <li class="item"><a class="itemA" href="conta.html">Meu Perfil</a></li>
+            <li class="item"><a class="itemA" id="isolar" href="email.html">Email</a></li>
+        </ul>
+    </header>
+    <section>
+        <h1 id="titulo">Caixa de Email</h1>
+        <div id="geral">
+            <div id="conversas">
+                <div class="chat" onclick="tony()">
+                    <img class="perfil" src="../imagens/tony.jpg" alt="Foto:Tony">
+                    <hgroup class="grupo">
+                        <h1 class="pessoas">Tony Stark</h1>
+                        <h2 class="texto">Eu estou ocupado, mas Pepper lhe receberá...</h2>
+                    </hgroup>
+                </div>
+                <div class="chat" onclick="pepper()">
+                    <img class="perfil" src="../imagens/pepper.jpg" alt="Foto:Pepper">
+                    <hgroup class="grupo">
+                        <h1 class="pessoas">Pepper Potts</h1>
+                        <h2 class="texto">Olá! O Tony pediu para eu falar com você...</h2>
+                    </hgroup>
+                </div>
+                <div class="chat" onclick="vingadores()">
+                    <img class="perfil" src="../imagens/vingadores.jpg" alt="Foto:Vingadores">
+                    <hgroup class="grupo">
+                        <h1 class="pessoas">Novos Vingadores</h1>
+                        <h2 class="texto">Seja bem-vindo(a)! Vamos começar com seu...</h2>
+                    </hgroup>
+                </div>
+                <div class="chat">
+                    <img class="perfil" src="../imagens/nick.jpg" alt="Foto:Nick">
+                    <hgroup class="grupo">
+                        <h1 class="pessoas">Nick Fury</h1>
+                        <h2 class="texto">Não posso dizer muito, direi apenas que...</h2>
+                    </hgroup>
+                </div>
+            </div>
+            <div id="mensagens">
+                <div class="bate-papoP">
+                    <figure class="contato">
+                        <img class="perfil" src="../imagens/pepper.jpg" alt="Foto:Pepper">
+                        <figcaption class="nome">Pepper Potts</figcaption>
+                    </figure>
+                    <div id="ola" class="msg">
+                        <p>Olá! O Tony pediu para eu falar com você, ele não pode vir agora, 
+                        então trouxe alguns jogos para jogarmos enquanto ele não chega! 
+                        Gostaria de jogar?</p>
+                        <input name="escolha" id="sim" type="radio" value="sim">
+                        <label for="sim">Sim</label>
+                        <input name="escolha" id="nao" type="radio" value="nao">
+                        <label for="nao">Não</label><br>
+                        <button type="button" class="e">Avançar</button>
+                    </div>
+                    <div class="seguinte">
+                        <p class="juntar" id="resposta">...</p>
+                        <div id="jogos" class="msg" id="exibir">
+                            <strong id="str"></strong><br>
+                            Escolha uma opção:<br>
+                            <a>Jogo da Velha</a><br>
+                            <a>Descubra a Palavra</a><br>
+                            <a>Jogo da Memória</a><br>
+                        </div>
+                        <button type="button" id="retorno" class="juntar" onclick="voltar()">Voltar</button>
+                    </div>
+                </div>
+                <div class="bate-papoT">
+                    <figure class="contatoT">
+                        <img class="perfil" src="../imagens/tony.jpg" alt="Foto:Tony">
+                        <figcaption class="nome">Tony Stark</figcaption>
+                    </figure>
+                    <div class="msg">
+                        <p>Eu estou ocupado, mas Pepper lhe receberá, ela deve apresentar a 
+                        empresa ou jogar algo contigo. Te vejo em breve,
+                         não faça besteira até eu chegar!
+                        </p>
+                         <button type="button" onclick="pepper()">Falar com a Pepper</button>
+                    </div>
+                </div>
+                <div class="bate-papoNV">
+                    <figure class="contatoNV">
+                        <img class="perfil" src="../imagens/vingadores.jpg" alt="Foto:Vingadores">
+                        <figcaption class="nome">Novos Vingadores</figcaption>
+                    </figure>
+                    <div id="primsg">
+                        <div id="kate">
+                            <img class="gp" src="../imagens/kate.png" alt="Kate">
+                            <p class="msg" id="ktexto">
+                                <strong id="k">~Kate Bishop</strong><br>
+                                Temos gente nova por aqui! Prazer, me chamo Kate Bishop!
+                            </p>
+                        </div>
+                        <div id="peter">
+                            <img class="gp" src="../imagens/peter.jpg" alt="Peter">
+                            <div class="msg">
+                                <strong id="p">~Peter Parker</strong>
+                                <div id="petermsg">
+                                    <img id="play" src="../imagens/play.ico" alt="play" onclick="reproduzir()">
+                                    <img id="audio" src="../imagens/sound.png" alt="audio">
+                                    <audio id="sons" src="../audios/Peter.mp3"></audio>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="juntar2" onclick="baixo()">Me apresentar!</p>
+                    </div>
+                    <div id="restomsg">
+                        <p id="apresentar" class="juntar2">
+                            ...
+                        </p>
+                        <div id="cap">
+                            <img class="gp" src="../imagens/capitao.jpg" alt="Steve">
+                            <p class="msg">
+                                <strong id="s">~Steve Rogers</strong><br>
+                                Olá, sou Steve Rogers! Meu papel aqui é formar uma nova geração
+                                de Vingadores, da qual vocês farão parte. Antes da primeira missão
+                                vocês precisam treinar. Peter vai com o Tony, Kate com o Bruce, 
+                                <strong id="nick">...</strong> escolha Natasha ou Clint.
+                            </p>
+                        </div>
+                        <div id="nat">
+                            <img class="gp" src="../imagens/viuva.jpg" alt="Natasha">
+                            <p class="msg">
+                                <strong id="n">~Natasha Romanoff</strong><br>
+                                Eu poderia lhe ensinar uns bons golpes, o Clintão tá meio velho haha.<br>
+                                <a>Treinar com Natasha!</a>
+                            </p>
+                        </div>
+                        <div id="cli">
+                            <img class="gp" src="../imagens/clint.png" alt="Clint">
+                            <p class="msg">
+                                <strong id="c">~Clint Barton</strong><br>
+                                O Clintão ainda sabe atirar flechas, vai ser útil quando estiver lutando com alienigenas ou Lokis.<br>
+                                <a>Treinar com Clint!</a>
+                            </p>
+                        </div>
+                        <p class="juntar2" onclick="cima()">Voltar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../scripts/email.js"></script>
+</body>
+</html>

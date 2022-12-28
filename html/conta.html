@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" type="text/css" href="../estilo/conta.css">
+</head>
+<body onload="perfil()">
+    <header id="cabecalho">
+        <a href="../index.html"><img id="logo" src="../imagens/LogoIndStark.png" alt="logo"></a>
+        <ul id="list">
+            <li id="cascata" onclick="menuAparece()">
+                <p>Menu</p>
+                <img id="icon" src="../imagens/menu.png">
+            </li>
+            <ul id="listaC">
+                <li class="ite"><a class="iteA" href="../index.html">Home</a></li>
+                <li class="ite"><a class="iteA" href="conta.html">Meu Perfil</a></li>
+                <li class="ite"><a class="iteA" id="isolar" href="email.html">Email</a></li>
+                <li onclick="menuSome()"><img id="icon2" src="../imagens/fechar.png"></li>
+            </ul>
+        </ul>
+        <ul class="lista">
+            <li class="item"><a class="itemA" href="../index.html">Home</a></li>
+            <li class="item"><a class="itemA" href="conta.html">Meu Perfil</a></li>
+            <li class="item"><a class="itemA" id="isolar" href="email.html">Email</a></li>
+        </ul>
+    </header>
+    <div id="alerta">
+        <p>
+            Parece que você ainda não tem uma conta.<br>
+            Crie uma em:<br>
+            <a href="configurar.html">Configurar Conta</a>
+        </p>
+    </div>
+    <section id="usuario">
+        <div id="divs">
+            <img src="" id="perfil">
+        </div>
+        <div id="dados">
+            <h1 id="nome">Carregando...</h1>
+            <h2>Funcionário da Stark Industries</h2>
+            <button type="button" id="bot"><a id="editar" href="configurar.html">Editar Informações</a></button>
+        </div>
+    </section>
+    <script src="../scripts/conta.js"></script>
+</body>
+</html>

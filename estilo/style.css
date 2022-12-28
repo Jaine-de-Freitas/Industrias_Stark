@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#cabecalho{
+    border-bottom: rgb(24, 255, 251) 2px solid;
+}
+#logo{
+    width: 210px;
+    height: 52px;
+    margin:30px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+#foto{
+    width: 210px;
+    height: 52px;
+}
+#img{
+    width: 60%;
+    height: 37%;
+    float:left;
+}
+.todo{
+    display:flex;
+    margin-bottom:80px;
+}
+#titulo{
+    font-size: 30px;
+    font-family: 'Arial Black';
+}
+#logoT{
+    width: 350px;
+    height: 200px;
+}
+.textA{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+#textos{
+    display:block;
+    float: right;
+    text-align: center;
+    width: 60%;
+    margin-top: 20px;
+}
+#text_form{
+    margin:auto;
+    position: absolute;
+    background-image:radial-gradient(circle at center left,rgb(255,165,0,0.0) 13%,rgb(0, 0, 0) 53%);
+    width:100%;
+    height: 100%;
+}
+#audio{
+    display:none;
+}
+#formulario{
+    display:none;
+    float: right;
+    text-align: center;
+    margin:auto;
+    width: 60%;
+    margin-top: 100px;
+}
+#senha{
+    margin-top: 25px;
+}
+.tb{
+    margin-top: 12px;
+    margin-left: 4px;
+}
+.tb:hover{
+    cursor:pointer;
+}
+#cadeado1{
+    width: 30px;
+    height: 40px;
+    margin-top: 5px;
+}
+#cadeado2{
+    width: 30px;
+    height: 40px;
+    margin-top: 5px;
+}
+.acessar{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    margin: auto;
+}
+#acesso{
+    margin-top: 15px;
+}
+@media (max-width:1100px){
+    #img{
+        width: 100%;
+    }
+    #titulo{
+        font-size: 23px;
+    }
+    .textA{
+        font-size: 19px;
+    }
+    #textos{
+        margin-top: 60px;
+    }
+}
+@media (max-width:800px){
+    #text_form{
+        background-image: none;
+        position: relative;
+    }
+    #textos{
+        float:none;
+        width: auto;
+    }
+    #formulario{
+        float:none;
+        width: auto;
+    }
+    .todo{
+        display: block;
+    }
+    #img{
+        margin-top: -50px;
+    }
+}

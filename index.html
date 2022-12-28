@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industrias Stark</title>
+    <link rel="stylesheet" type="text/css" href="estilo/style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <a href="index.html"><img id="logo" src="imagens/LogoIndStark.png" alt="logo"></a>
+    </header>
+    <section class="todo">
+        <img id="img" src="imagens/HMF.jpeg" alt="Homem de Ferro">
+        <div id="text_form">
+            <div id="textos">
+                <h1 id="titulo">Você é o novo membro da</h1>
+                <img id="foto" src="imagens/LogoIndStark.png" alt="logo">
+                <p class="textA">Vamos começar os trabalhos.<br> Tony Stark lhe deixou sua primeira missão!</p>
+                <button class="acessar" type="button" onclick="player()">
+                    <img id="cadeado1" src="imagens/cad2.png" alt="Cadeado">
+                    <p class="tb">Acessar o sistema!</p>
+                </button>
+            </div>
+            <audio id="audio" src="audios/Bem-Vindo.mp3"></audio>
+            <div id="formulario">
+                <label class="textA" for="senha" id="alabel">Digite a senha:</label><br>
+                <input type="password" name="senha" id="senha"><br>
+                <button class="acessar" id="acesso" type="button" onclick="senhA()">
+                    <img id="cadeado2" src="imagens/cad2.png" alt="Cadeado">
+                    <p class="tb">Acessar</p>
+                </button>
+                <p class="textA" id="msg"></p>
+            </div>
+            <audio id="audioN" src="audios/Negado.mp3"></audio>
+            <audio id="audioP" src="audios/Playboyzinho.mp3"></audio>
+        </div>
+    </section>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

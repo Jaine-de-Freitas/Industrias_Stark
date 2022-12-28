@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurar Conta</title>
+    <link rel="stylesheet" type="text/css" href="../estilo/configurar.css">
+</head>
+<body onload="verificar()">
+    <header id="cabecalho">
+        <a href="../index.html"><img id="logo" src="../imagens/LogoIndStark.png" alt="logo"></a>
+        <ul id="list">
+            <li id="cascata" onclick="menuAparece()">
+                <p>Menu</p>
+                <img id="icon" src="../imagens/menu.png">
+            </li>
+            <ul id="listaC">
+                <li class="ite"><a class="iteA" href="../index.html">Home</a></li>
+                <li class="ite"><a class="iteA" href="conta.html">Meu Perfil</a></li>
+                <li class="ite"><a class="iteA" id="isolar" href="email.html">Email</a></li>
+                <li onclick="menuSome()"><img id="icon2" src="../imagens/fechar.png"></li>
+            </ul>
+        </ul>
+        <ul class="lista">
+            <li class="item"><a class="itemA" href="../index.html">Home</a></li>
+            <li class="item"><a class="itemA" href="conta.html">Meu Perfil</a></li>
+            <li class="item"><a class="itemA" id="isolar" href="email.html">Email</a></li>
+        </ul>
+    </header>
+    <h1 id="titulo">Configurações</h1>
+    <form id="formulario">
+        <div class="foto">
+            <label class="clique" for="perfil">
+                <input type="file" name="perfil" id="perfil" accept="image/jpg">
+                <div class="espaco">
+                    <img src="" id="exibe">
+                    <img id="imagem" src="../imagens/cam.png">
+                </div>
+                </label>
+        </div>
+        <div class="texto">
+            <label for="nome">Seu nome:</label><br>
+            <input type="text" name="nome" id="nome"><br>
+            <button id="botao" type="button">Salvar Alterações</button>
+            <p id="parag">
+                *para alterar qualquer campo,<br>
+                 basta clicar, fazer as alterações<br>
+                  e salvá-las
+            </p>
+        </div>
+    </form>
+    <script src="../scripts/configurar.js"></script>
+</body>
+</html>
